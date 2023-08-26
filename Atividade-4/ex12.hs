@@ -11,4 +11,6 @@ main = do
     let x = read input :: Int
     input <- getLine
     let y = read input :: Int
-    print (mdc x y)
+    input <- getLine
+    let z = read input :: Int
+    print (mdc (mdc x y) z)
